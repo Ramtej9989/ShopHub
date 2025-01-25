@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - ShopHub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/lucide-icons/dist/umd/lucide.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">ShopHub</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn">
+          <i data-lucide="moon"></i>
+        </button>
+        <button class="icon-btn">
+          <i data-lucide="search"></i>
+        </button>
+        <a href="account.html" class="icon-btn">
+          <i data-lucide="user"></i>
+        </a>
+        <a href="cart.html" class="icon-btn cart-btn">
+          <i data-lucide="shopping-cart"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+        <button class="menu-btn" id="menuToggle">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Contact Content -->
+  <div class="contact-container">
+    <!-- Header -->
+    <section class="contact-header container">
+      <h1 class="fade-in">Get in Touch</h1>
+      <p class="fade-in">Have a question or feedback? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info container">
+      <div class="contact-grid">
+        <div class="contact-card fade-in">
+          <i data-lucide="map-pin"></i>
+          <h3>Visit Us</h3>
+          <p>123 Shopping Street</p>
+          <p>New York, NY 10001</p>
+        </div>
+        <div class="contact-card fade-in">
+          <i data-lucide="phone"></i>
+          <h3>Call Us</h3>
+          <p>+1 (555) 123-4567</p>
+          <p>Mon-Fri, 9am-6pm</p>
+        </div>
+        <div class="contact-card fade-in">
+          <i data-lucide="mail"></i>
+          <h3>Email Us</h3>
+          <p>support@shophub.com</p>
+          <p>sales@shophub.com</p>
+        </div>
+        <div class="contact-card fade-in">
+          <i data-lucide="clock"></i>
+          <h3>Working Hours</h3>
+          <p>Monday-Friday: 9am-6pm</p>
+          <p>Saturday: 10am-4pm</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section container">
+      <div class="form-container">
+        <h2>Send us a Message</h2>
+        <form id="contactForm" class="contact-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

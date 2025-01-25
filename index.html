@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopHub - Modern E-commerce</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/lucide-icons/dist/umd/lucide.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">ShopHub</a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html">Shop</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+
+      </div>
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn">
+          <i data-lucide="moon"></i>
+        </button>
+        <button class="icon-btn">
+          <i data-lucide="search"></i>
+        </button>
+        <a href="account.html" class="icon-btn">
+          <i data-lucide="user"></i>
+        </a>
+        <a href="cart.html" class="icon-btn cart-btn">
+          <i data-lucide="shopping-cart"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+        <button class="menu-btn" id="menuToggle">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content container">
+      <h1 class="fade-in">Discover Your Style</h1>
+      <p class="fade-in">Shop the latest trends in fashion, electronics, and more with our curated collection of premium products.</p>
+      <a href="shop.html" class="btn btn-primary fade-in">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features container">
+    <div class="features-grid">
+      <div class="feature-card fade-in">
+        <i data-lucide="truck"></i>
+        <h3>Free Shipping</h3>
+        <p>On orders over $100</p>
+      </div>
+      <div class="feature-card fade-in">
+        <i data-lucide="star"></i>
+        <h3>Premium Quality</h3>
+        <p>Handpicked products</p>
+      </div>
+      <div class="feature-card fade-in">
+        <i data-lucide="shopping-bag"></i>
+        <h3>Easy Returns</h3>
+        <p>30-day return policy</p>
+      </div>
+      <div class="feature-card fade-in">
+        <i data-lucide="trending-up"></i>
+        <h3>Best Deals</h3>
+        <p>Price match guarantee</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="featured-products container">
+    <h2>Featured Products</h2>
+    <div class="products-grid" id="featuredProducts">
+      <!-- Products will be loaded dynamically -->
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Stay Updated</h2>
+      <p>Subscribe to our newsletter for exclusive offers, new products, and trends.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn btn-secondary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - ShopHub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/lucide-icons/dist/umd/lucide.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">ShopHub</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn">
+          <i data-lucide="moon"></i>
+        </button>
+        <button class="icon-btn">
+          <i data-lucide="search"></i>
+        </button>
+        <a href="account.html" class="icon-btn">
+          <i data-lucide="user"></i>
+        </a>
+        <a href="cart.html" class="icon-btn cart-btn">
+          <i data-lucide="shopping-cart"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+        <button class="menu-btn" id="menuToggle">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Shop Content -->
+  <div class="shop-container container">
+    <!-- Filters -->
+    <aside class="filters">
+      <div class="filter-group">
+        <h3>Categories</h3>
+        <div class="filter-options" id="categoryFilters">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="electronics">Electronics</button>
+          <button class="filter-btn" data-category="accessories">Accessories</button>
+          <button class="filter-btn" data-category="sports">Sports</button>
+          <button class="filter-btn" data-category="fashion">Fashion</button>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <h3>Price Range</h3>
+        <div class="filter-options" id="priceFilters">
+          <button class="filter-btn active" data-price="all">All</button>
+          <button class="filter-btn" data-price="0-100">$0 - $100</button>
+          <button class="filter-btn" data-price="100-300">$100 - $300</button>
+          <button class="filter-btn" data-price="300+">$300+</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Products Grid -->
+    <div class="products-grid" id="productsGrid">
+      <!-- Products will be loaded dynamically -->
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/main.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>

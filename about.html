@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - ShopHub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/lucide-icons/dist/umd/lucide.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">ShopHub</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn">
+          <i data-lucide="moon"></i>
+        </button>
+        <button class="icon-btn">
+          <i data-lucide="search"></i>
+        </button>
+        <a href="account.html" class="icon-btn">
+          <i data-lucide="user"></i>
+        </a>
+        <a href="cart.html" class="icon-btn cart-btn">
+          <i data-lucide="shopping-cart"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+        <button class="menu-btn" id="menuToggle">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- About Content -->
+  <div class="about-container">
+    <!-- Story Section -->
+    <section class="story-section container">
+      <h1 class="fade-in">Our Story</h1>
+      <p class="fade-in">Founded in 2024, ShopHub has grown from a small startup to a global e-commerce platform. Our mission is to provide high-quality products and exceptional shopping experiences to customers worldwide.</p>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card fade-in">
+            <i data-lucide="users"></i>
+            <div class="stat-value">1M+</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+          <div class="stat-card fade-in">
+            <i data-lucide="globe"></i>
+            <div class="stat-value">50+</div>
+            <div class="stat-label">Countries Served</div>
+          </div>
+          <div class="stat-card fade-in">
+            <i data-lucide="award"></i>
+            <div class="stat-value">100K+</div>
+            <div class="stat-label">Products Available</div>
+          </div>
+          <div class="stat-card fade-in">
+            <i data-lucide="heart"></i>
+            <div class="stat-value">99%</div>
+            <div class="stat-label">Satisfaction Rate</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section container">
+      <h2>Our Team</h2>
+      <div class="team-grid">
+        <div class="team-card fade-in">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&h=400&q=80" alt="Sarah Johnson">
+          <h3>Sarah Johnson</h3>
+          <p>CEO & Founder</p>
+        </div>
+        <div class="team-card fade-in">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&h=400&q=80" alt="Michael Chen">
+          <h3>Michael Chen</h3>
+          <p>Head of Design</p>
+        </div>
+        <div class="team-card fade-in">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&h=400&q=80" alt="Emily Rodriguez">
+          <h3>Emily Rodriguez</h3>
+          <p>Product Manager</p>
+        </div>
+        <div class="team-card fade-in">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&h=400&q=80" alt="David Kim">
+          <h3>David Kim</h3>
+          <p>Tech Lead</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section container">
+      <h2>Our Values</h2>
+      <div class="values-grid">
+        <div class="value-card fade-in">
+          <h3>Quality First</h3>
+          <p>We believe in offering only the highest quality products to our customers. Every item in our store goes through rigorous quality checks.</p>
+        </div>
+        <div class="value-card fade-in">
+          <h3>Customer Satisfaction</h3>
+          <p>Our customers are at the heart of everything we do. We strive to provide the best shopping experience and support.</p>
+        </div>
+        <div class="value-card fade-in">
+          <h3>Innovation</h3>
+          <p>We continuously innovate and improve our platform to meet the evolving needs of our customers.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
